@@ -2,12 +2,29 @@
 	"layer":"top",
 	"modules-left": ["hyprland/workspaces", "hyprland/mode"],
 	"modules-center": ["clock"],
-	"modules-right": ["battery"],
+	"modules-right": ["pulseaudio", "battery", "battery#bat1"],
 	"battery": {
-		"format": "{capacity}% "
+		"bat": "BAT0",
+		"format": "INT {capacity}% "
+	},
+	"battery#bat1": {
+		"bat": "BAT1",
+		"format": "EXT {capacity}% "
 	},
 
 	"clock": {
 		"format": "{:%a %d %b %I:%M}"
+	},
+	"pulseaudio": {
+    		"format": "{volume}% {icon}",
+		"format-muted": "0% {icon}",
+    		"format-bluetooth": "{volume}% {icon}",
+		"format-icons": {
+			"default": "",
+			"default-muted": ""
+		},
+		"on-click": "pavucontrol"
 	}
+
+
 }
