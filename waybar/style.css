@@ -39,13 +39,6 @@ window#waybar {
  * value from ~/.config/hypr/hyprland.conf
  * gaps_out (8px) + border size (2px) = 10px */
 
-
-#privacy {
-    background: #e64553;
-    color: #15161e;
-}
-
-
 #workspaces {
     padding: 0 3px;
 }
